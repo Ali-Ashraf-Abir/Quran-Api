@@ -106,7 +106,7 @@ function fetchSurahInfos(){
                 if(typeof(currentlyDisplaying)!='string'){
                 for(let ayah of data.surahs[currentlyDisplaying].ayahs){
                     surahAyah.innerHTML+=`
-                    <p class="bg-gray-900 text-white lg:text-2xl text-xl font-semibold mt-4 py-2">${ayah.numberInSurah}. ${ayah.text}</p>
+                    <p class="bg-[#2b2441] text-white lg:text-2xl text-xl font-semibold mt-4 py-2">${ayah.numberInSurah}. ${ayah.text}</p>
                     `
                 }
             }
@@ -137,7 +137,7 @@ function fetchSurahInfos(){
                     surahAyah.innerHTML=" "
                 for(let ayah of data.surahs[currentlyDisplaying].ayahs){
                     surahAyah.innerHTML+=`
-                    <p class="bg-gray-900 text-white lg:text-2xl text-xl font-semibold mt-4 english py-2">${ayah.numberInSurah}. ${ayah.text}</p>
+                    <p class="bg-[#2b2441] text-white lg:text-2xl text-xl font-semibold mt-4 english py-2">${ayah.numberInSurah}. ${ayah.text}</p>
                     `
                 }
             }
@@ -159,8 +159,8 @@ function fetchSurahInfos(){
                 surahAyah.innerHTML=" "
             for(let ayah of data[currentlyDisplaying].verses){
                 surahAyah.innerHTML+=`
-                <p class="bg-gray-900 text-white lg:text-2xl text-xl font-semibold mt-4 py-2">${ayah.id}. ${ayah.text}</p>
-                <p class="bg-gray-900 text-white lg:text-2xl text-xl font-semibold py-2"> ${ayah.translation}</p>
+                <p class="bg-[#2b2441] text-white lg:text-2xl text-xl font-semibold mt-4 py-2">${ayah.id}. ${ayah.text}</p>
+                <p class="bg-[#2b2441] text-white lg:text-2xl text-xl font-semibold py-2"> ${ayah.translation}</p>
                 `
             }
         }
