@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Quran</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/1ef4fcd6c3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-[#191825]">
+    <header>
+
+        <div class="" id="menu-button" >
+
+            <button class="lg:text-4xl text-3xl absolute top-10 left-0 ml-4 text-[#865DFF] english" id="toggle-menu"><i class="fa-solid fa-book-quran"></i>
+                <span class="text-xl lg:inline-block hidden ">Surah-List</span></button>
+
+
+
+        </div>
+
+
+
+
+        
+        <div class="h-[100vh] lg:w-[40%] bg-[#FFA3FD] fixed overflow-x-hidden overflow-y-scroll hidden top-0 left-0" id="menu">
+
+            <button class="lg:text-2xl text-xl sticky top-0 ml-[95%]" id="menu-close"><i class="fa-solid fa-xmark"></i></button>
+            
+            <div class="" id="surah-names">
+                
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+    
+    
+    
+    </header>
+
+    <main>
+
+        <!-- surah name part -->
+        <div class="lg:text-3xl text-2xl text-center underline text-white mt-10" id="surah-name">Surah Name</div>
+        
+        <!-- buttons section -->
+        <div class="flex lg:justify-end justify-center lg:mt-[-30px] mt-3">
+            <button class="px-5 py-2 mr-4 bg-[#E384FF] rounded-lg" id="english-translation">English</button>
+            <button class="px-5 py-2 mr-4 bg-[#E384FF] rounded-lg" id="arabic-translation">Arabic</button>
+            <button class="px-5 py-2 mr-4 bg-[#E384FF] rounded-lg" id="bangla-translation">Bangla</button>
+        </div>
+
+        <!-- section where the ayah of surah will go -->
+        <div class="text-center" id="surah-ayah">
+
+            <div class="text-center w-[60%] mx-auto mt-[100px] lg:text-3xl text-white english text-xl">
+            <p class="mt-5">Bismillah hir rahmanur rahim</p>
+
+            <p class="mt-5">Assalumualaikum wa rahmatullah</p>
+
+            <p class="mt-5">Please select a surah from the menu on the left to read it.There is a toggle-menu 
+                on the left side of the screen,<br><span class="text-[#865DFF]">click on the surah list on left side of the screen</span>,then you can choose the arabic-translation as 
+                you desire
+            </p>
+        </div>
+
+        </div>
+    </main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
