@@ -35,8 +35,8 @@ let currentlyDisplaying="none"
 function fetchSurahInfos(){
 
 
-    url= 'http://api.alquran.cloud/v1/quran/quran-uthmani'
-    url2='http://api.alquran.cloud/v1/quran/en.asad'
+    url= 'https://api.alquran.cloud/v1/quran/quran-uthmani'
+    url2='https://api.alquran.cloud/v1/quran/en.asad'
     url3='https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_bn.json'
     fetch(url)
     .then(res=>res.json())
