@@ -132,6 +132,7 @@ function fetchSurahInfos(){
         const surahAyah=document.getElementById("surah-ayah")
 
             document.getElementById("english-translation").addEventListener('click',function(){
+                if(typeof(currentlyDisplaying)!="string"){
                 surahAyah.innerHTML=" "
                 if(typeof(currentlyDisplaying)!='string'){
                 for(let ayah of data.surahs[currentlyDisplaying].ayahs){
@@ -139,7 +140,7 @@ function fetchSurahInfos(){
                     <p class="bg-gray-900 text-white lg:text-2xl text-xl font-semibold mt-4 english py-2">${ayah.numberInSurah}. ${ayah.text}</p>
                     `
                 }
-            }
+            }}
                 })
     
     
